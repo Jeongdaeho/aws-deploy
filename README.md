@@ -19,7 +19,7 @@ composer install
 ## 설정
 
 # Iam 권한 생성
-AWSNetworkManagerReadOnlyAccess 를 포함하는 계정생성, access key 생성
+AmazonEC2ReadOnlyAccess  를 포함하는 계정생성, access key 생성
 
 # credentials 등록
 ```sh
