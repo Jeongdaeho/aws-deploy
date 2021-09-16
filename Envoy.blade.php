@@ -10,7 +10,7 @@
         'Filters' => [
             [
                 'Name' => 'group-name',
-                'Values' => ['BizCare-Web'],    // sg 이름으로 변경해준다.
+                'Values' => ['service-Web'],    // sg 이름으로 변경해준다.
             ],
         ],
     ]);
@@ -25,8 +25,8 @@
 @servers($server)
 
 @task('deploy', ['on' => 'web', 'parallel' => true])
-cd ~/
-ls -al
-{{-- git pull origin {{ $branch }} --}}
-{{-- php artisan migrate --}}
+cd ~/www/
+git pull
+php artisan migrate
+
 @endtask
